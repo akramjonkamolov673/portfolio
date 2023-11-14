@@ -1,0 +1,393 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+
+    background: #000;
+    color: white;
+    padding-top: 83px;
+}
+
+.menu {
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.text_hello {
+    letter-spacing: 3px;
+}
+
+.menu .brand {
+    color: #fff !important;
+    font-weight: bold;
+}
+
+.active {
+    color: #FFBD39 !important;
+}
+
+.color {
+    color: #FFBD39 !important;
+}
+
+.menu ul li {
+    transition: all .3s linear;
+}
+
+.menu ul li a {
+    color: #fff;
+}
+
+.menu ul li:hover a {
+    color: #FFBD39;
+}
+
+a {
+    text-decoration: none;
+    color: initial;
+}
+li{
+    list-style: none;
+}
+
+.nav-link:focus {
+    color: #FFBD39 !important;
+}
+
+.btn_menu {
+    width: 30px;
+    background: transparent;
+    color: #fff;
+    border: none;
+}
+
+.btn_warning {
+    padding: 15px 35px;
+    font-size: 12px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    font-weight: 600;
+    color: black;
+    background: #FFBD39;
+    border: 1px solid #FFBD39;
+    overflow: hidden;
+    transition: all .3s linear;
+}
+
+.btn_warning a {
+    transition: all .3s linear;
+}
+.btn_warning:focus a{
+    color: #fff;
+}
+.btn_warning:hover {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.btn_warning:hover a {
+    color: #fff;
+}
+
+.btn_outline a {
+    transition: all .3s linear;
+    color: #fff;
+}
+
+.btn_outline:hover {
+    border: 1px solid #FFBD39;
+}
+
+.btn_outline:hover a {
+    color: #000;
+}
+
+.btn_outline {
+    padding: 15px 35px;
+    font-size: 12px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    font-weight: 600;
+    color: #FFBD39;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+}
+
+.title {
+    font-size: 120px;
+    font-weight: 900;
+    width: 100%;
+    opacity: 0.1;
+    position: absolute;
+    z-index: 0;
+}
+
+.card_text {
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+.resume_card {
+    background: #1A1A1A;
+    /* background: #1A1A1A; */
+    transition: all .5s linear;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    
+}
+
+
+.resume_card p {
+    color: #bebebe;
+    font-weight: 300;
+    transition: all .3s linear;
+
+}
+
+.resume_card:hover {
+    /* background: #FFBD39; */
+    box-shadow: 0 0 30px rgba(255, 189, 57, 1);
+    border: 1px solid #FFBD39;
+}
+
+.resume_card:hover::before {
+    height: 100%;
+    /* width: 100%; */
+}
+
+.resume_card:hover p {
+    color: #000;
+}
+
+.resume_card::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: #FFBD39;
+    /* color: #000; */
+    z-index: -1;
+    transition: all .5s ease-out;
+    border-radius: 5px;
+}
+
+.resume_card .color {
+    transition: all .3s linear;
+}
+
+.resume_card:hover .color {
+    color: #fff !important;
+}
+
+.services_card {
+    background: #1A1A1A;
+    /* background: #1A1A1A; */
+    transition: all .3s linear;
+    color: #fff;
+}
+
+.services_card:hover {
+    /* background: #FFBD39; */
+    box-shadow: 0px 0px 30px #FFBD39;
+    color: #FFBD39;
+    border: 1px solid #FFBD39;
+}
+
+.services_card p {
+    letter-spacing: 3px;
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+}
+
+.services_card p::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 1px;
+    background-color: #FFBD39;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all .3s linear;
+}
+
+.services_card:hover p::after {
+    background: #fff;
+}
+
+.services_card:hover .card_icon {
+    fill: #fff;
+}
+
+.services_card .card_icon {
+    fill: #FFBD39;
+    transition: all .3s linear;
+}
+
+.react {
+    color: #61D9FA;
+}
+
+.js {
+    color: #FED600;
+}
+.html{
+    color:#F2531E;
+}
+.css{
+    color: #38BDF8;
+}
+.sass{
+    color: #F36092;
+}
+.boot{
+    color: #7532FA;
+}
+.django{
+    color: rgb(8, 138, 8);
+}
+.python{
+    color: rgb(36, 171, 255);
+}
+.db{
+    color: rgb(199, 199, 199);
+}
+.blender{
+    color: #ff8400;
+}
+.node{
+    color: greenyellow;
+}
+.overlay_card{
+    aspect-ratio: 5/2.5;
+    height: 100%;
+    width: 100%;
+    transition: all .3s linear;
+    overflow: hidden;
+}
+
+.overlay_card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.overlay_card .overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    /* background: rgba(255, 189, 57, 0.8); */
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #FFBD39;
+    box-shadow: 0px 0px 30px #FFBD39 inset;
+}
+.project_p{
+    letter-spacing: 3px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #FFBD39;
+    position: relative;
+}
+.project_p::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 1px;
+    background-color: #FFBD39;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all .3s linear;
+}
+.overlay_card:hover .overlay{
+    visibility: visible;
+    opacity: 1;
+
+}
+.overlay_icon{
+    width: 40px;
+    height: 40px;
+    display: block;
+    border-radius: 50%;
+    background: #FFBD39;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+.overlay_icon svg{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+.contact_div{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #1A1A1A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFBD39;
+    font-size: 35px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    transition: all .3s linear;
+}
+
+.contact .card{
+    transition: all .3s linear;
+    height: 100%;
+    padding: 30px 10px;
+}
+.contact .card:hover {
+    /* background: #FFBD39; */
+    box-shadow: 0px 0px 30px #FFBD39 inset;
+    color: #FFBD39;
+    border: 1px solid #FFBD39;
+}
+.contact .card:hover .contact_div{
+    box-shadow: 0px 5px 20px #FFBD39;
+    border: 1px solid #FFBD39;
+}
+.footer{
+    background: #1A1A1A;
+}
+.footer_bottom{
+    border-top: 1px solid #FFBD39;
+}
+
+
+@media screen and (max-width:992px) {
+    .title {
+        font-size: 80px;
+        font-weight: 900;
+        width: 100%;
+        opacity: 0.1;
+        position: absolute;
+        z-index: 0;
+    }
+}
